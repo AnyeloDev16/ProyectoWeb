@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body,
+.main{
+    position: relative;
+    z-index: -3;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    padding: 1vh;
+    background-color: #f2f9fd;
+    border-bottom: 1px solid #1b81ae;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+/*header-logo*/
+.header-logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo > img{
+    width: 50px;
+    height: 50px;
+}
+
+.header-logo > h1{
+    margin-left: 15px;   
+}
+
+.header-logo > h1 > a{
+    color: #102f41;
+}
+
+/*navegacion*/
+.nav{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.nav > a{   
+    color: black;
+}
+
+.comprar {
+    background-color: #1b81ae;
+    color: #212121;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;
+    background-color: #f2f9fd;
+    border: 2px solid #1b81ae;
+    border-radius: 0px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: #1b81ae;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #1b81ae;
+    color: #212121;
+  }
+  
+  .dropdown-content a:focus {
+    background-color: #0d4f9e;
+    color: white;
+  }
+  
+  .dropdown-content #ult:hover {
+    border-radius: 0px 0px 11px 11px;
+  }
+
+  .paste-button:hover button {
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .paste-button:hover .dropdown-content {
+    display: block;
+  }
+
+.nav > a:hover{
+    text-decoration: underline;
+}
+
+/*search*/
+
+.header-search{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-search > input[type="text"]{
+    width: 70%;
+    height: 70%;
+    border: 1px solid #1C274C;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 35px;
+}
+
+.header-search > button{
+    width: 7%;
+    height: 50%;
+    background-color: white;
+    border-radius: 70px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 68px;
+}
+
+.header-search img{
+    height: 100%;
+}
+
+/*opciones*/
+.header-options{
+    width: 25%;
+    height: 100%;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-options a:nth-child(1){
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-right: 1px solid black;
+    
+}
+
+.header-options a:nth-child(1) > img{
+    margin-right: 10px;
+}
+.header-options a:nth-child(2){
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+.header-options a:nth-child(3){
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-options div{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background-color: #1C274C;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+.header-options img{
+    width: 32px;
+    height: 32px;
+}
+
+/*aside -redes*/
+
+.aside-redes{
+    position: fixed;
+    background-color: #1C274C;
+    width: 40px;
+    height: 120px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.facebook{
+    width: 32px;
+    height: 32px;
+}
+
+.instagram{
+    width: 24px;
+    height: 24px;
+}
+
+.tiktok{
+    width: 24px;
+    height: 24px;
+}
+
+/*main contenido*/
+
+.main{
+    width: 100%;
+    height: 90vh;
+}
+
+.main-content{
+    position: relative;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;  
+    padding-top: 5vh;
+}
+
+.main-content > h2{
+    padding-left: 30vw;
+    margin-bottom: 2vh;
+}
+
+form{
+    margin: 0 auto;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;   
+}
+
+.input{
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 1px 0 rgba(0, 0, 0, 0.07) inset;
+  border: 1px solid #a6a6a6;
+  border-radius: 7px;
+  border-top-color: rgb(166, 166, 166);
+  font-size: 16px;
+  outline: none;
+}
+
+.input-text{
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  padding: 10px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 1px 0 rgba(0, 0, 0, 0.07) inset;
+  border: 1px solid #a6a6a6;
+  border-radius: 7px;
+  border-top-color: rgb(166, 166, 166);
+  font-size: 16px;
+  outline: none;
+}
+
+.input:hover,
+.input-text:hover{
+    border-color: #1642d1;
+    box-shadow: 0 0 0 3px #a5aee0, 0 1px 2px rgba(15, 17, 17, 0.15) inset;
+}
+
+.submit{
+  padding: 10px 40px;
+  width: 80%;
+  margin-top: 20px;
+  border: none;
+  font-size: 14px;
+  background: #46a2fd;
+  color: white;
+  outline: none;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+/*aside 2*/
+
+.aside-wsp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;  
+    background-color: #5BD066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside-wsp img{
+    width: 30px;
+    height: 30px;
+}
+
+/*footer*/
+
+.footer{
+
+    width: 100%;
+    height: 10vh;
+    background: #283f80;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
