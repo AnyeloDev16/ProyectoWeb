@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Meta etiquetas-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Titulo-->
+    <title>Stylegenie | Iniciar Sesión</title>
+    <!--Meta datos-->
+    <meta name="description"
+        content="Ingresa a tu cuenta Stylegenie y descubre un mundo de moda personalizada. ¡Tu estilo único te espera aquí!" />
+    <!--MD Redes Sociales-->
+    <meta property="og:title" content="Stylegenie | Iniciar Sesión" />
+    <meta property="og:description"
+        content="Ingresa a tu cuenta Stylegenie y descubre un mundo de moda personalizada. ¡Tu estilo único te espera aquí!" />
+    <meta property="og:image" content="" />
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="Css/style-login.css" />
+    <link rel="icon" href="" />
+    <!--icon-->
+    <link rel="apple-touch-icon" href="" />
+    <!--icon de movil-->
+    <meta name="theme-color" content="#FFFF0" />
+    <!--color de barra de movil-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
+</head>
+
+<body>
+    <!--Encabezado-->
+
+    <header class="header">
+        <div class="header-logo">
+            <img src="" alt="" />
+            <h1><a href="index.html">Stylegenie</a></h1>
+        </div>
+        <nav class="nav">
+            <div class="paste-button">
+                <a class="comprar" href="compra.html">Comprar &nbsp;▼</a>
+                <div class="dropdown-content">
+                    <a href="">Polos</a>
+                    <a href="">Joggers</a>
+                    <a href="">Camisas</a>
+                    <a href="">Chompas</a>
+                    <a id="ult" href="">Zapatos</a>
+                </div>
+            </div>
+            <a href="">Blog</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="header-search">
+            <input type="text" placeholder="Buscar en Stylegenie" />
+            <button><img src="img/search.svg" alt="" /></button>
+        </div>
+        <div class="header-options">
+            <a href="login.html"><img src="img/user.svg" alt="" />Iniciar Sesión</a>
+            <a href=""><img src="img/heart.svg" alt="" /></a>
+            <a href=""><img src="img/shopping-cart.svg" alt="" />
+                <div>0</div>
+            </a>
+        </div>
+    </header>
+
+    <!--aside - redes-->
+
+    <aside class="aside-redes">
+        <a href=""><img class="facebook" src="img/facebook.svg" alt="" /></a>
+        <a href=""><img class="instagram" src="img/instagram.svg" alt="" /></a>
+        <a href=""><img class="tiktok" src="img/tiktok.svg" alt="" /></a>
+    </aside>
+
+    <!--Cuerpo-->
+
+    <main class="main">
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera--login">
+                    <h3>¿Ya eres cliente vip?</h3>
+                    <p>
+                        Inicia sesion con tu cuenta de cliente para ingresar ala pagina
+                    </p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesion</button>
+                </div>
+                <div class="caja__tracera--registrar">
+                    <h3>¿Aun no tines una cuenta?</h3>
+                    <p>Registrate para iniciar sesion</p>
+                    <button id="btn__registrarse">Registrarte</button>
+                </div>
+            </div>
+            <div class="contenedor__login-registrar">
+                <!-- Formulario de inicio de sesión -->
+                <form action="php/login_usuario_be.php" method="POST" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo electrónico" name="correo" />
+                    <input type="password" placeholder="Contraseña" name="contrasena" />
+                    <button type="submit">Entrar</button>
+                </form>
+                <!-- Formulario de Registro -->
+                <form action="php/registro_usuario_be.php" method="POST" class="formulario__registrar">
+                    <h2>Registrarte</h2>
+                    <div class="cant"><span>1</span> de 2</div>
+                    <div class="registrar-part1">
+                        <input type="text" placeholder="Nombre completo" name="nombre_completo" />
+                        <input type="tel" placeholder="Numero de Telefono" name="telefono" />
+                        <select id="genero" name="genero">
+                            <option value="">--Seleccionar--</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="no-binario">Y 39 tipos de gay</option>
+                        </select>
+                        <input type="date" name="date" />
+                        <input type="email" placeholder="Correo electronico" name="correo" />
+                        <input type="button" value="Siguiente" id="btnSiguiente">
+                    </div>
+                    <div class="registrar-part2">
+                        <input type="text" placeholder="Nombre de usuario" name="usuario" />
+                        <input type="password" placeholder="Contraseña" name="contrasena" />
+                        <input type="password" placeholder="Repetir contraseña" name="rep_contrasena" />
+                        <input type="button" value="Regresar" id="btnRegresar">
+                        <button type="submit">Registrarme</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </main>
+
+    <!--ASIDE-->
+
+    <aside class="aside-wsp">
+        <a href=""><img src="img/whatsapp-svgrepo-com.svg" alt="" /></a>
+    </aside>
+
+    <!--Pie de pagina-->
+
+    <footer class="footer">
+        <p>&copy;2024, Stylegenie</p>
+    </footer>
+    <script src="js/componenteLogin.js"></script>
+</body>
+
+</html>
